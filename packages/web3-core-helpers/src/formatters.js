@@ -300,7 +300,7 @@ var outputBlockFormatter = function (block) {
 
     // transform to number
     block.gasLimit = utils.hexToNumber(block.gasLimit);
-    block.gasUsed = utils.hexToNumber(block.gasUsed);
+    block.gasUsed = utils.hexNumberToString(block.gasUsed);
     block.size = utils.hexToNumber(block.size);
     block.timestamp = utils.hexToNumber(block.timestamp);
     if (block.number !== null)
